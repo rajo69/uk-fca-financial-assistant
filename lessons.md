@@ -12,4 +12,6 @@ here.
 
 <!-- Append new lessons below this line. Newest at bottom. -->
 
-(No lessons yet — this file is populated as the project progresses.)
+- 2026-05-19: On Windows hosts, set up .gitattributes before committing any
+  shell scripts — core.autocrlf will rewrite working-tree copies to CRLF and
+  break bash hooks at next checkout.
