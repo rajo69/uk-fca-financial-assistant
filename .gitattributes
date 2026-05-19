@@ -1,0 +1,38 @@
+# Enforce LF line endings on text files regardless of host OS.
+# Critical for shell scripts on Windows: core.autocrlf would otherwise
+# rewrite hooks to CRLF and break bash on Linux/Kaggle.
+
+# Auto-detect text files and normalise to LF in the repo
+* text=auto eol=lf
+
+# Explicitly force LF on shell scripts and other Linux-executed files
+*.sh text eol=lf
+*.bash text eol=lf
+Makefile text eol=lf
+*.py text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+*.cfg text eol=lf
+*.ini text eol=lf
+
+# Binary files — never normalise
+*.jsonl binary
+*.parquet binary
+*.safetensors binary
+*.bin binary
+*.pt binary
+*.pth binary
+*.onnx binary
+*.gguf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.whl binary
