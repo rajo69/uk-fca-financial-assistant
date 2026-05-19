@@ -20,11 +20,17 @@ Status: in progress.
     (made executable; committed with mode 100755)
   - Created .gitignore (Python, tooling caches, secrets, OS, IDE)
   - Initialised git repo on `main` and made the initial commit
+  - Portability hardening: added `.gitattributes` to force LF endings on
+    shell scripts and text files, so `core.autocrlf=true` on Windows
+    won't rewrite hooks to CRLF and break bash on next checkout / on
+    Kaggle clone
+  - Recorded the CRLF / `.gitattributes` lesson in `lessons.md` so future
+    Phase setups remember to do this first on Windows hosts
 - What's pending:
   - Phase 1 file review by the user
 - Next action: Phase 2 — repo scaffolding & dependency management
-- Last-known-good git SHA: `38afde5` (feat(foundations): initial workflow
-  and hook files)
+- Last-known-good git SHA: `779ba8f` (docs(lessons): record CRLF /
+  .gitattributes lesson)
 
 ## Next action
 
