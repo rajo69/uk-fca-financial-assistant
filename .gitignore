@@ -49,7 +49,8 @@ qdrant_storage/
 embeddings_cache/
 *.faiss
 models/
-checkpoints/
+checkpoints/*
+!checkpoints/.gitkeep
 outputs/
 wandb/
 .langfuse/
@@ -78,3 +79,11 @@ desktop.ini
 *~
 *.sublime-workspace
 *.sublime-project
+
+# ---- Phase 2 additions ----
+# Training run artefacts
+mlruns/
+
+# Raw fetched data (Phase 5 outputs are not committed)
+data/raw/*
+!data/raw/.gitkeep
