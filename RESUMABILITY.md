@@ -10,11 +10,21 @@ Status: in progress.
 
 ## Last session
 
-- Date: [to be filled by first session]
-- Session name: [e.g. `phase-01-foundations`]
-- What was done: [bullets]
-- What's pending: [bullets]
-- Last-known-good git SHA: [SHA]
+- Date: 2026-05-19
+- Session name: `phase-01-foundations`
+- What was done:
+  - Created Phase 1 foundation docs: CLAUDE.md, RESUMABILITY.md,
+    DECISION_LOG.md, lessons.md, .claude/sessions.md
+  - Created Claude Code config and hooks: .claude/settings.json,
+    session_start.sh, pre_bash.sh, pre_write.sh, post_edit.sh
+    (made executable; committed with mode 100755)
+  - Created .gitignore (Python, tooling caches, secrets, OS, IDE)
+  - Initialised git repo on `main` and made the initial commit
+- What's pending:
+  - Phase 1 file review by the user
+- Next action: Phase 2 — repo scaffolding & dependency management
+- Last-known-good git SHA: `38afde5` (feat(foundations): initial workflow
+  and hook files)
 
 ## Next action
 
