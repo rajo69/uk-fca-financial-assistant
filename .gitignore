@@ -1,0 +1,80 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Tooling caches ----
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.cache/
+
+# ---- Secrets & environment ----
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+credentials.json
+service-account*.json
+
+# ---- Data caches & model artefacts ----
+data/cache/
+data/raw/cache/
+data/tmp/
+*.duckdb
+.qdrant/
+qdrant_storage/
+embeddings_cache/
+*.faiss
+models/
+checkpoints/
+outputs/
+wandb/
+.langfuse/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Claude Code local overrides ----
+.claude/settings.local.json
+
+# ---- OS ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ---- IDE / editors ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
